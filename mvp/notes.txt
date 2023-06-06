@@ -1,0 +1,26 @@
+1. Where to get data from
+    - Alpha Vantage can be used for historical and technical indicator data
+        - limited by how many free API calls we can make
+        - can be used for both python and nodejs
+    - Yahoo Finance is free but is limited and will probably only used for historical data
+        - python
+    - IEX Cloud seems to be good for technical indicators
+        - best part: free * insert eagle noises *
+2. What data to use in ML model
+    - technical idicators
+        - current for the day
+    - historical data
+        - open
+        - close
+        - close > open
+3. What ML model to choose
+    - logistic regression
+        - our data is continuous
+        - remember that we want to focus on classifying buy or sell, for now
+    - neural networks
+        - there is a link in the README with a good example of using Keras
+    - 
+4. Other things to ponder about
+    - do we do current technical indicator along with historical range
+    - do we do all technical indicators along with historical data for a given historical range
+    - do we also juxtapose our stock data with the broader marker
